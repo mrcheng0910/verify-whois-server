@@ -14,7 +14,7 @@ import threading
 from Queue import Queue
 from threading import Thread
 from datetime import datetime
-from collections import defaultdict
+
 
 num_thread = 10      # 线程数量
 queue = Queue()     # 任务队列，存储sql
