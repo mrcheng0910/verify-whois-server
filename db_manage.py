@@ -8,7 +8,7 @@ def read_conf():
 
     import ConfigParser
     cf = ConfigParser.ConfigParser()
-    cf.read('database.conf')
+    cf.read('db.conf')
     source_db = 'bj'
     db_host = cf.get(source_db, "host")
     db_port = cf.getint(source_db, "port")
