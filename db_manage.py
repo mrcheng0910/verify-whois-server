@@ -9,7 +9,7 @@ def read_conf():
     import ConfigParser
     cf = ConfigParser.ConfigParser()
     cf.read('db.conf')
-    source_db = 'bj'
+    source_db = 'bj'   # 修改该参数，来更换数据库
     db_host = cf.get(source_db, "host")
     db_port = cf.getint(source_db, "port")
     db_user = cf.get(source_db, "user")
